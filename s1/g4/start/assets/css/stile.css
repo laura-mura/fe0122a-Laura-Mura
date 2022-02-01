@@ -1,0 +1,208 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 10%;
+    background-image: url(../img/sfondo.png);
+    background-position: center;
+} 
+/* HEADER */
+header{
+    text-align: center;
+    background: rgb(59,148,180,1);
+    background: linear-gradient(0deg, rgba(27,91,129,1) 0%, rgba(34,162,207,1) 49%, rgba(0,159,191,1) 100%);
+    padding: 10%;
+    box-shadow: 2px 2px 4px rgb(41, 40, 40);
+    color: white;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+}
+header div p{
+    line-height: 50px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header ul{
+    list-style-type:none ;
+}
+
+/* MAIN */
+main{
+    background: white;
+    box-shadow: 2px 2px 4px rgb(41, 40, 40);
+    border: 2px solid rgba(0, 0, 0, 0.253);
+    padding: 5%;
+    line-height: 25px;
+}
+h1{
+    font-weight: bold;
+    margin: 20px 0px;
+    font-size: 22px;
+    line-height: 30px;    
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+main p{
+    margin-bottom: 20px;
+ }   
+hr{
+    display: none;
+
+}
+
+.diverso{
+    color: rgba(0, 0, 0, 0.336);
+   font-size: 15px;
+}
+
+main strong{
+    color: rgb(173, 20, 173);
+}
+main ul{
+    margin-bottom: 20px;
+}
+main ul li{
+    margin-left: 30px;
+}
+.evidente{
+    background-color: rgba(0, 0, 0, 0.164);
+    border: 1px solid rgba(128, 128, 128, 0.651);
+    border-radius: 5px;
+}
+main ol{
+    margin-bottom: 20px;
+}
+main ol li{
+    margin-left: 30px;
+}
+.titolononmaiuscolo{
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    color: black;
+}
+
+/* TABELLE */
+table caption{
+    font-style: italic;
+    font-weight: bold;
+}
+table{
+    border-bottom: 2px solid rgb(29, 97, 223);
+    border-collapse: collapse;
+    width:100% ;
+    text-align: center;
+    margin-bottom: 30px;
+}
+thead{ 
+    color: white;
+    background-color: rgb(29, 97, 223);
+}
+.parolascomoda{
+    text-align: end ;
+}
+   
+td, th{
+    border: 1px solid rgba(255, 255, 255, 0.336);
+    padding: 15px;
+    vertical-align: bottom;    
+}
+tbody tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.048);
+}
+.linkcolor{
+    color:rgb(42, 183, 207);
+    font-weight: bold;
+}
+iframe{
+    border: 1px transparent;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    height: 180px;
+    margin-bottom: 30px;
+}
+section{
+    background-color:rgba(128, 128, 128, 0.274) ;
+    padding: 5%;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.795);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.titolo2{
+    margin-bottom: 15px;
+    margin-top: -20px;
+}
+/* FORM */
+
+input[type=email] {
+    border: 0px;
+    border-bottom: 2px dotted;
+}
+
+input, textarea{
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+}
+button {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(29, 97, 223);
+    border: transparent;
+    height: 30px;
+    width: 70px;
+}
+
+/* ELEMENTI NELL' ASIDE */
+.titolo3 {
+    margin-bottom: 15px;
+}
+div{
+    background-color: rgba(128, 128, 128, 0.274) ;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+}
+div p{
+    margin-bottom: 15px;
+}
+p.data{
+    text-align: right;
+    font-size: 13px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+/* FOOTER */
+footer{
+    font-size: 14px;
+    padding: 6%;
+    background: rgb(9,31,43);
+    background: linear-gradient(0deg, rgba(9,31,43,1) 0%, rgba(15,65,83,1) 49%, rgba(1,96,115,1) 100%);
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+footer a{
+    color: fuchsia;
+}
+footer p{
+    padding-bottom: 20px;
+}
+footer address{
+    padding-bottom: 15px;
+}

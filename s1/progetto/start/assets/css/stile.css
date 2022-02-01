@@ -1,0 +1,168 @@
+
+
+body{
+    font-size: 1.2rem;
+    line-height: 1.65;
+    text-align: center;
+
+}
+
+header{
+    background-color: black;
+    padding: 10%;
+    text-align: center;
+}
+
+
+
+main h1, h2, h3, h4{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    font-weight: bold;
+    line-height: 1;
+}
+main h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main p{
+     font-family: 'Open Sans', sans-serif;
+    color: #393d41 ;
+    
+  
+}
+
+
+main section {
+    background-image: url(../images/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 10%;  
+}
+h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+button{
+    background-color:#f04c2f  ;
+     font-family: 'Montserrat', sans-serif;
+   color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1.5;
+    width: 150px;
+    height: 50px;
+    border: 1px transparent;
+    border-radius: 5px;
+}  
+
+main section div p:last-of-type{
+    margin-top: 30px;
+}
+
+ .bordoimmagine{
+    border: 1px transparent;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 50px;
+}  
+   
+
+h3{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+
+article div:last-of-type{
+    color: white;
+    background-color: #f04c2f ;
+    padding: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+blockquote{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+.coloredue{
+    color: white;
+}
+.coloretre{
+    color: white;
+    font-size: 13px;
+}
+
+.colore{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+
+   
+h4{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+aside div p{
+    margin-bottom: 40px;
+}
+.contorno{
+
+     text-align: center;
+    border: 1px solid #dee1e3;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+footer{
+    color: white;
+    background-color: #25a2c3;
+    padding: 10%;
+    margin-top: 50px;
+}
+
+footer h2{
+    margin-bottom: 20px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+address{
+    font-family: 'Open Sans', sans-serif;
+    color: #c8e7f0;
+    font-size: 15px;
+}
+
+footer a:link{
+    color: #c8e7f0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+footer p{
+    color: #c8e7f0;
+    font-size: 14px;
+
+}
