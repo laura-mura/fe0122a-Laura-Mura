@@ -8,6 +8,32 @@ body {
     background-image: url('../img/sfondo.png');
     background-position: center center;
 }
+    @media screen and (min-width:500px) {
+        html {
+            font-size: 70%;
+        }
+        body {
+            line-height: 1.8;
+        }
+    }
+
+    @media screen and (min-width:700px) {
+        html {
+            font-size: 80%;
+        }
+        body {
+            line-height: 2;
+        }
+    }
+    @media screen and (min-width:1200px) {
+        html {
+            font-size: 100%;
+        }
+        body {
+            line-height: 2.4;
+        }
+    }
+
 * {box-sizing: border-box;}
 hr {display: none;} /* rimuove l'elemento */
 
@@ -49,6 +75,17 @@ header {
     top: 0;
     z-index: 10;
 }
+@media screen and (min-width:800px) {
+    header {
+        padding: 1.3em;
+    }
+}
+
+@media screen and (min-width:800px) {
+        header {
+            padding: 1em;
+        }
+    }
 header div img {
     margin-bottom: 20px;
 }
@@ -80,7 +117,18 @@ main {
     box-shadow: 0 3px 3px #444;
     padding: 2em 1em;
     margin-bottom:1.5em ;
+  
 }
+article{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+    @media screen and (min-width:700px) {
+        main {
+            padding: 2em;
+        }
+    }
+
 section { 
     background-color: #e3e3e3;
     padding: 2.5em 1em 1em;
@@ -155,6 +203,17 @@ iframe {
 table {
     margin-bottom: 2em;
 }
+    @media screen and (min-width:500px) {
+        table {
+            margin: 0 auto 2em;
+        }
+    }
+    @media screen and (min-width:700px) {
+        table {
+            width: 70%;
+        }
+    }
+
 caption {
     font-weight: bold;
     font-style: italic;
@@ -193,6 +252,20 @@ button {
     color: white;
     font-weight: bold;
 }
+    @media screen and (min-width:500px) {
+        input {
+            display: inline-block;
+            width: 70%;
+        }
+    }
+    @media screen and (min-width:700px) {
+        input {
+            padding: 15px;
+        }
+        button {
+            padding: 15px 30px;
+        }
+    }
 
 /* ELEMENTI NELL' ASIDE */
 aside h2 {
@@ -214,7 +287,28 @@ aside div p:last-child {
     font-size: 0.8em;
     text-align: right;
 }
-
+#correlati {
+    background-color: white;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 300px;
+    height: 650px;
+}
+#correlati h2{
+    font-size: 1.8rem;
+}
+main{
+    display: grid;
+    grid-template-columns: auto auto 300px;
+    grid-gap: 20px;
+}
+main article {
+    grid-area: 1/1/3/3;
+}
+section {
+  
+    align-self: center;
+}
 
 /* FOOTER */
 footer {
@@ -226,115 +320,41 @@ footer {
     text-align: center;
     font-size: 1.2rem;
 }
+    @media screen and (min-width:800px) {
+        footer {
+            padding: 1em 12em;
+        }
+    }
+
 footer a {
     color: fuchsia;
 }
 
-/*DESKTOP*/
 
 @media screen and (min-width:1200px) {
-    body {
-        font-size: 2.3em;
-        padding: 40px;
-        
+    header, main, footer {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    main {
-        padding: 2em 2em;
-    }
-    main article p {
-        margin-bottom: 20px;
-    }
-    header {
-        padding: 1em 1.5em;
-        font-size: 0.9em;
-        letter-spacing: 2px;
-    }
-    header div img, p {
-        margin-bottom: 0.3em;
-    }
-    .imgLeft {
-        width: 120px;
-        height: 120px;
-    }
-    table {
-        display: block;
-        margin: auto;
-        width: 50%;
-        margin-top: 40px;
-        margin-bottom: 3em;
-    }
-    iframe {
-        display: block;
-        margin: auto;
-        width: 80%;
-        height: 450px;
-        margin-bottom: 5em;
-        margin-top: 2em;
-        border-radius: 20px;
-    }  
-    main article h1{
-        font-size: 1.5em;
-    }
-    main article section h2, aside h2 {
-        font-size: 1.2em;
-    }
-    form input{
-        display: inline-block;
-        width : 45%;
-        height: 50px;
-        font-size: 1.1em;
-    }
-    button{
-        display: inline-block;
-        width : 10%;
-        height: 50px;
-        font-size: 1em;
-    }
-    footer {
-        font-size: 0.8em;
-    }
-    
 }
 
-
-/*STAMPA*/
-
 @media print {
-    header {
-        display: none;
-    }
-    footer {
-        display: none;
-    }
-    aside {
-        display: none;
-    }
-    main article section {
-        display: none;
-    }
-    iframe {
-        display: none;
-    }
-    .social , .toTop {
-        display: none;
-    }
     body {
-        padding: 0%;
-        font-size: 2.3em;
+        font-size: 24px;
+        padding: 0;
+        background-image: none;
+    
     }
     main {
         box-shadow: none;
+        margin: 0;
     }
-
+    th {
+        background-color: #d3d3d3;
+    }
+    header, article section, aside, footer, .social, .toTop {
+        display: none;
+    }
 }
-@media screen and (min-width: 500px) {
-header div {
-    display: flex;
-    
-}
-}
-    
-    
-
-
 
