@@ -1,0 +1,149 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@600&family=Open+Sans&family=Poppins&family=Raleway&display=swap');
+
+body {
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.8;  
+}
+/* HEADER */
+header {
+    background-color: white;
+    width: 100%;  
+    height: 100px;
+    box-shadow: #d3d3d3;
+}
+header img{
+    position: sticky;
+    z-index: 3;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+header nav ul {
+    padding-top: 70px;
+    padding-left: 40px;
+    position: absolute;
+    top: -103%;
+    transition: top 0.5s ease-out;
+    background-color: white;
+    width: 100vw;
+    height: 35vh;
+    box-shadow: 2px 2px 6px #666;
+    z-index: 1;
+    list-style: none;
+}
+header nav a{
+    text-decoration: none;
+    color: gray;
+}
+
+.buttom {
+    display: inline-block;
+    color: white;
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    font-size: 1.5rem;
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+
+
+}  
+.btnMenu {
+    display: none;
+}
+.IcoMenu {
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    z-index: 2;
+}
+.btnMenu:checked ~ nav ul {
+    top: 0;
+
+}
+
+.fas.fa-ellipsis-h, .far.fa-comment-dots, .fas.fa-map-marker-alt, .fas.fa-user, .far.fa-grin-beam, .far.fa-grin-stars, 
+.far.fa-meh,  .fab.fa-facebook-square, .fab.fa-linkedin, .fab.fa-instagram {
+    color: #e42424;
+}
+
+/* MAIN */
+main {
+    margin: 20px;
+}
+main section {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover ;
+
+}
+main section div {
+    padding: 30px;
+    color: white;
+    line-height: 1.5;
+    text-align: left;
+}
+h1 {
+    font-size: 50px;
+}
+span {
+    text-transform: uppercase ;
+}
+ article{
+     margin-top: 50px;
+ text-align: center;
+ }
+ h2 {
+     font-size: 40px;
+     line-height: 1.4;
+     margin-bottom: 30px;
+ }
+ h3 {
+     font-size: 30px;
+ }
+ article p {
+     margin-bottom: 40px;
+ }
+ #blu {
+    padding: 30px;
+     color: white;
+     text-align: center;
+     background-color: #0c0633;
+ }
+ aside {
+     margin-top: 50px;
+    text-align: center;
+ }
+ aside img{
+     margin-bottom: 30px;
+     width: 15em;
+ }
+ aside p {
+     margin-bottom: 30px;
+ }
+
+/* FOOTER */
+footer {
+    padding: 2em;
+    background-color: rgb(238, 238, 238);
+}
+h4 {
+    font-size: 25px;
+    margin-top: 20px ;
+    
+}
+footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer fieldset input{
+    height: 50px;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+/* RESPONSIVE */
