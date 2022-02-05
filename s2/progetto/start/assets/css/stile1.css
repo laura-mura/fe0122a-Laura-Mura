@@ -6,9 +6,9 @@
 
 body{
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Fira Sans', sans-serif;
-    line-height: 1.8;   
+    line-height: 1.5;   
     
 }
 
@@ -23,16 +23,16 @@ hr{
 header{
     position: sticky;
     top: 0px;
-    
-    width: 100%;
-    height: 100px;
     background-color: white;
+    width: 100%;  
+    height: 80px;
+    box-shadow: 1px 1px 3px 3px #d3d3d3;
 }
 
 .fas.fa-ellipsis-h, .far.fa-comment-dots, .fas.fa-map-marker-alt, .fas.fa-user, .far.fa-grin-stars, .fab.fa-facebook-square,
 .fab.fa-linkedin, .fab.fa-instagram{
     color: #e42424;
-    font-size: 1.5em;
+    
 }
 
 #logo{
@@ -48,7 +48,7 @@ header nav ul{
     transition: top 1s;
     background-color: white;
     width: 100vw;
-    height: 35vh;
+    height: 22vh;
     z-index: 1;
     box-shadow: 2px 2px 6px #666;
     padding-top: 70px;
@@ -61,6 +61,20 @@ nav a{
     color: grey;
 }
 
+.buttom {
+    display: inline-block;
+    color: white;
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    font-size: 1.5rem;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    padding-top: 10px;
+}
 .btnMenu{
     display: none;
 }
@@ -79,14 +93,15 @@ nav a{
     color: white;
     background: rgb(108,193,226);
     background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
-    border: 0;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 6px;
-    text-shadow: 2px 1px #666;
+    font-size: 1.3rem;
+    border: none;
+    padding: 10px 15px 10px 15px;
     text-decoration: none;
-    box-shadow: 2px 1px 6px #666;
-    margin-bottom: 2em;
+    text-align: center;
+    width: 170px;
+    height: 30px;
+    margin: auto;
+
 }
 
 /* MAIN */
@@ -94,22 +109,22 @@ main{
     text-align: center;
     margin-right: 1em;
     margin-left: 1em;
+  
 }
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.1em;
-    text-shadow: 2px 1px #666;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 15px;
+    padding-top: 50px;
 }
 
 
 
 h2{
-    font-size: 35px;
-    line-height: 1.2em;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 p, address{
@@ -120,53 +135,221 @@ p, address{
 
 main input{
     height: 40px;
-}
+   
 
+}
+fieldset{
+    margin: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+    height: 300px;
+    margin: auto;
+    justify-content: center;
+    
+}
+input, textarea {
+    width: 100%;
+}
 main fieldset input, textarea, .button{
-    margin-top: -15px;
+    margin-top: 20px;
     
 }
 
 textarea{
-    margin-bottom: -15px;
+   
     padding-top: 10px;
 }
 
 main fieldset input, textarea {
     font-family: 'Fira Sans', sans-serif;
     font-style: italic;
-    padding-left: 10px;    
+    padding-left: 10px;  
+    padding-right: 0;  
+    width: 320px
 }
 
 main p{
     margin-bottom: 2em;
+}
+main aside{
+    margin: 0 40px 0 40px;
 }
 
 
 
 
 /* FOOTER */
-footer{
+footer {
     padding: 2em;
-    background-color: #eeeeee
+    background-color: rgb(238, 238, 238);
 }
-
-footer p, address{
-    margin-right: 0;
-    margin-top: 1em;
+h4 {
+    font-size: 25px;
+    margin-top: 20px ;
+    
 }
-
-h4{
-    line-height: 1.1em;
-    margin-bottom: 0.6em;
-    margin-top: 2em;
+footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-footer fieldset input {
-    height: 50px;
+footer fieldset input{
+    height: 55px;
 }
-
-fieldset form{
+fieldset {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
+
 }
+.buttom2{
+    color: white;
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    font-size: 1.5rem;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+
+}  
+footer form{
+        display: none;
+    }
+footer input {
+        padding: 0;
+    }
+
+@media screen and (min-width: 700px) {
+
+    header {
+        position: absolute;
+        position: fixed;
+        top: 0;
+        height: 80px;
+        z-index: 2;
+    }
+    header img{
+        position: sticky;
+        z-index: 3;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    header nav {
+       text-align: right;
+       margin: 50px;
+    }
+    header nav ul {
+        width: 500px;
+        height: 60px;
+        top: 15px;
+        right: 30px;
+        padding-top: 0;
+        padding-left: 0;
+        border: none;
+        box-shadow: none;
+        z-index: 1;    
+    }
+    header nav ul li{
+       display: inline-block;
+       margin-left: 15px;
+        list-style: none;
+        font-size: 20px;
+    }
+    
+    .btnMenu {
+        display: none;
+    }
+    .IcoMenu {
+        display: none;
+    }
+    .btnMenu:checked ~ nav ul {
+        display: none;
+    }
+    .fas.fa-ellipsis-h {
+        display: none;
+    }
+    h1 {
+        padding-top: 150px;
+    }
+    h2{
+        line-height: 30px;
+    }
+    article {
+       display: flex;
+       margin: auto;
+       height: 407px;
+       align-items: flex-start;
+       justify-content: space-around;
+    }
+    aside p:last-child {
+        margin-bottom: 0;      
+    }
+    aside h2:first-child{
+        margin-top: 15px;
+    }
+    aside {
+        width: 50%;
+    }
+    fieldset {
+        width: 50%; 
+        margin-top: 0%;
+    }
+    form {
+        width: 100%;
+    }
+    form div input, textarea {
+        width: 100%;
+    }
+    footer section {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer section div {
+        flex-basis: 30%;
+    }
+    #copy {
+        text-align: center;
+    }
+    
+    footer fieldset, input, .buttom2{
+        width: 100%;
+    }
+    }
+    @media screen and (min-width:1200px) {
+        header {
+            padding-left: 220px;  
+        }
+        ul {
+            padding-right: 250px;
+        }
+        main section div {
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .contenitore{
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        footer section {
+            width: 950px;
+            margin: auto;
+        }
+    }
+    
+
+
+
+
+
+
+    
+    
