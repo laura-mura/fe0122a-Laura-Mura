@@ -1,0 +1,36 @@
+ @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+ @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+ @import "function";
+
+ $back-color: rgba(139, 139, 139, 0.164);
+
+
+
+ .container {
+     text-align: center;
+   .sezioni {
+       padding: 50px;
+   }
+
+ }
+
+ .brand{
+    text-align: center;
+    flex-grow: 1;
+    padding: 0.8em;
+}
+
+aside{
+    background-color: $back-color;
+    color: crea-contrasto-sfondo($back-color);
+
+    .slide_carosello{
+        height: 270px; 
+        
+        img{
+            border-radius: 50%;
+        }
+    }
+}
