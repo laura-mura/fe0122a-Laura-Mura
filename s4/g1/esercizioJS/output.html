@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output con JS</title>
+</head>
+
+<body>
+    <h1>Direttive di Output</h1>
+    
+    <div id="test" ></div>
+    <h2 id="prova">Sono un titolo</h2>
+
+<button type="button" onclick="document.write('scrivi qualcosa')"> clicca</button>
+
+    <script>
+        //window.alert('Mi chiamo Laura');
+        //alert(2 + 3);
+
+        document.write(10);
+
+        document.getElementById('test').innerHTML = 3 + 4;
+
+        document.getElementById('prova').innerHTML = 'contenuto che sostituisce';
+
+        console.log(3 * 4)
+        console.log('Mi chiamo Laura')
+
+    </script>
+    
+</body>
+</html>
